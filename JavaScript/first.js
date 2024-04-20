@@ -15,10 +15,21 @@
 // }
 
 // For-of Loop
-let fulName = "Ahmed Bin Khalid"
-let size = 0;
-for(let val of fulName){
-    console.log("val:", val);
-    size++;
+// let fulName = "Ahmed Bin Khalid"
+// let size = 0;
+// for(let val of fulName){
+//     console.log("val:", val);
+//     size++;
+// }
+// alert(size)
+
+// For-in loop
+let student = {
+    name : "Ahmed",
+    cgpa :2.93,
+    rollNo : "Fa20-BSE-062"
+
+};
+for (let key in student){
+    console.log("Key:", key, "value:", student[key])
 }
-alert(size)
