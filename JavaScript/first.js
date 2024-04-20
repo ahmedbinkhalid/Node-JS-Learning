@@ -24,12 +24,20 @@
 // alert(size)
 
 // For-in loop
-let student = {
-    name : "Ahmed",
-    cgpa :2.93,
-    rollNo : "Fa20-BSE-062"
+// let student = {
+//     name : "Ahmed",
+//     cgpa :2.93,
+//     rollNo : "Fa20-BSE-062"
 
-};
-for (let key in student){
-    console.log("Key:", key, "value:", student[key])
+// };
+// for (let key in student){
+//     console.log("Key:", key, "value:", student[key])
+// }
+
+// Printing all the even numbers from 0 to 100
+let i = 100
+for (i= 0; i<=100;  i++){
+    if(i%2 == 0){
+        console.log(i)
+    }
 }
