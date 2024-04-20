@@ -35,9 +35,20 @@
 // }
 
 // Printing all the even numbers from 0 to 100
-let i = 100
-for (i= 0; i<=100;  i++){
-    if(i%2 == 0){
-        console.log(i)
-    }
+// let i = 100
+// for (i= 0; i<=100;  i++){
+//     if(i%2 == 0){
+//         console.log(i)
+//     }
+// }
+
+// Game Guessing number generated randomly until  user guess it correctly
+
+let num = 25;
+// num = Math.random
+let gnum = prompt("Guess number");
+while(gnum != num){
+    gnum = prompt("guess again")
 }
+
+alert(gnum + "is correct");
