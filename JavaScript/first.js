@@ -44,11 +44,19 @@
 
 // Game Guessing number generated randomly until  user guess it correctly
 
-let num = 25;
-// num = Math.random
-let gnum = prompt("Guess number");
-while(gnum != num){
-    gnum = prompt("guess again")
-}
+// let num = 25;
+// // num = Math.random
+// let gnum = prompt("Guess number");
+// while(gnum != num){
+//     gnum = prompt("guess again")
+// }
 
-alert(gnum + "is correct");
+// alert(gnum + "is correct");
+
+// Template Literals Example
+let obj = {
+    item : "Pen",
+    price: 10
+}
+let output = `The cost of ${obj.item} is ${obj.price} rupees`;
+console.log(output);
