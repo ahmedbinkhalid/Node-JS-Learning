@@ -61,7 +61,7 @@
 // let output = `The cost of ${obj.item} is ${obj.price} rupees`;
 // console.log(output);
 
-// String Related Practice Questions
+// // String Related Practice Questions
 
-let userName = prompt("Enter Your Name Here");
-console.log("@"+userName+userName.length);
+// let userName = prompt("Enter Your Name Here");
+// console.log("@"+userName+userName.length);
