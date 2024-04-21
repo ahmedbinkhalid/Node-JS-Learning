@@ -53,10 +53,15 @@
 
 // alert(gnum + "is correct");
 
-// Template Literals Example
-let obj = {
-    item : "Pen",
-    price: 10
-}
-let output = `The cost of ${obj.item} is ${obj.price} rupees`;
-console.log(output);
+//     // Template Literals Example
+// let obj = {
+//     item : "Pen",
+//     price: 10
+// }
+// let output = `The cost of ${obj.item} is ${obj.price} rupees`;
+// console.log(output);
+
+// String Related Practice Questions
+
+let userName = prompt("Enter Your Name Here");
+console.log("@"+userName+userName.length);
