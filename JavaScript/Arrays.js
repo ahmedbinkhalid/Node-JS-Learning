@@ -20,10 +20,10 @@
 // }
 // console.log('After Applying Discount: ',prices);
 
-// Practicing Array (Add,remove,replace)
+// // Practicing Array (Add,remove,replace)
 
-let companies = ["Facebook","Google","Microsoft"];
-companies.shift();
-companies.splice(1,1,"Apple");
-companies.push("samsung");
-console.log(companies);
+// let companies = ["Facebook","Google","Microsoft"];
+// companies.shift();
+// companies.splice(1,1,"Apple");
+// companies.push("samsung");
+// console.log(companies);
