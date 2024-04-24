@@ -6,10 +6,12 @@
 // // Calling the Function
 // myfunction();
 
-// Two Numbers Sum -> Function
+// // Two Numbers Sum -> Function
 
-function myfunction(a,b){
-    console.log(a+b);
-}
+// function myfunction(a,b){
+//     console.log(a+b);
+// }
 
-myfunction(2, 5)  ;
+// myfunction(2, 5)  ;
+
+// Arrow Functions
