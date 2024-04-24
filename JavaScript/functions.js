@@ -64,12 +64,14 @@
 //     console.log("The Number was:", num, `The Square of ${num} is :`, num*num)
 // })
 
-// Question -> Print Square of each value in array using forEach Loop Optimized
+// // Question -> Print Square of each value in array using forEach Loop Optimized
 
-let arr = [1,2,3,4,5,6]
-let square = (num)=>{
-    console.log("The Number was:", num, `The Square of ${num} is :`, num*num)
-}
-arr.forEach(square)
+// let arr = [1,2,3,4,5,6]
+// let square = (num)=>{
+//     console.log("The Number was:", num, `The Square of ${num} is :`, num*num)
+// }
+// arr.forEach(square)
+
+// Maps in Javascript
     
 
