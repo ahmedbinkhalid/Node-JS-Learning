@@ -21,8 +21,23 @@
 // sum(4,9)
 
 // Practice Question -> Extract Vowels from String Through Funtions
+// let count = 0;
+// function myfunction(str){
+//     for(vw of str){
+//         if(vw == "a" || vw == "e" || vw == "i" || vw == "o" || vw == "u" ){
+//             console.log(vw)
+//             count++;
+//         }
+        
+//     }
+//     console.log("Total Number of Vowels are:", count)
+//     console.log("The String You Entered Was:", str)
+// }
+// myfunction(prompt("Enter  any string"));
+
+// Practice Question -> Extract Vowels from String Using Arrow Functions
 let count = 0;
-function myfunction(str){
+const vowels = (str) => {
     for(vw of str){
         if(vw == "a" || vw == "e" || vw == "i" || vw == "o" || vw == "u" ){
             console.log(vw)
@@ -33,4 +48,6 @@ function myfunction(str){
     console.log("Total Number of Vowels are:", count)
     console.log("The String You Entered Was:", str)
 }
-myfunction(prompt("Enter  any string"));
+ vowels(prompt("Enter  any string"));
+    
+
