@@ -50,11 +50,18 @@
 // }
 //  vowels(prompt("Enter  any string"));
 
-// ForEach Loop in Arrays combined with Arrow Funtion
+// // ForEach Loop in Arrays combined with Arrow Function
 
-let arr = ["ahmed", "Ali", "Hassan"]
-arr.forEach((val) => {
-    console.log(val.toLocaleUpperCase())
-});
+// let arr = ["ahmed", "Ali", "Hassan"]
+// arr.forEach((val) => {
+//     console.log(val.toLocaleUpperCase())
+// });
+
+// Question -> Print Square of each value in array using forEach Loop
+
+let arr = [1,2,3,4,5]
+arr.forEach((num)=>{
+    console.log("The Number was:", num, `The Square of ${num} is :`, num*num)
+})
     
 
