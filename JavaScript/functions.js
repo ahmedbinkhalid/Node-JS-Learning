@@ -15,3 +15,7 @@
 // myfunction(2, 5)  ;
 
 // Arrow Functions
+const sum =(a , b) => {
+    console.log(a + b);
+}
+sum(4,9)
