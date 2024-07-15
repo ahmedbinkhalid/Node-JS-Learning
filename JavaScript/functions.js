@@ -97,10 +97,34 @@
 // });
 // console.log(newArr)
 
-let arr = [1,2,3,4,5]
-let newArr = arr.reduce((prev, curr)=> {
-    return prev > curr ? prev : curr;
+// let arr = [1,2,3,4,5]
+// let newArr = arr.reduce((prev, curr)=> {
+//     return prev > curr ? prev : curr;
+// });
+// console.log(newArr)
+
+
+// Practive Questions
+// let marks = [43,90,95,89,93,95]
+// const greatGrade = marks.filter((val)=>{
+//     return val > 90
+// });
+// console.log(greatGrade)
+let max = prompt("enter any number")
+let nums = [];
+for(i=1; i<=max; i++){
+    nums.push(i);
+}
+let sumAll = nums.reduce((prev, curr)=>{
+    return prev + curr
 });
-console.log(newArr)
-    
+
+let productAll = nums.reduce((prev, curr)=>{
+    return prev * curr
+});
+console.log(`The complete array is ${nums}`)
+console.log(sumAll)
+console.log(productAll)
+
+
 
