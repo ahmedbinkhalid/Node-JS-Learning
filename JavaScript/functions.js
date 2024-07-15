@@ -73,5 +73,20 @@
 // arr.forEach(square)
 
 // Maps in Javascript
+
+// let arr = [1,2,3,4,5,6]
+// let newArr = arr.map((val) => {
+//     return val * val
+// });
+// console.log(newArr)
+
+// Filter in javascript
+
+let arr = [1,2,3,4,5,6,7,8]
+
+let evenArr = arr.filter((val)=>{
+    return val % 2 === 0; 
+});
+console.log(evenArr)
     
 
