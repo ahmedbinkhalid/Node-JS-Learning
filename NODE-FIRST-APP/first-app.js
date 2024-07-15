@@ -1,0 +1,1 @@
+console.log('Assalam o Alaikum from NodeJs');
