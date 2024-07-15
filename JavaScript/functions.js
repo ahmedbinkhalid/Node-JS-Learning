@@ -82,11 +82,25 @@
 
 // Filter in javascript
 
-let arr = [1,2,3,4,5,6,7,8]
+// let arr = [1,2,3,4,5,6,7,8]
 
-let evenArr = arr.filter((val)=>{
-    return val % 2 === 0; 
+// let evenArr = arr.filter((val)=>{
+//     return val % 2 === 0; 
+// });
+// console.log(evenArr)
+
+// Reduce Function in javascript
+
+// let arr = [1,2,3,4,5]
+// let newArr = arr.reduce((res, curr)=>{
+//     return res + curr
+// });
+// console.log(newArr)
+
+let arr = [1,2,3,4,5]
+let newArr = arr.reduce((prev, curr)=> {
+    return prev > curr ? prev : curr;
 });
-console.log(evenArr)
+console.log(newArr)
     
 
