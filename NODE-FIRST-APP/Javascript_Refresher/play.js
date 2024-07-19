@@ -23,18 +23,28 @@
 
 // // Arrow/function within objects
 
-// const person = {
-//     name: 'max',
-//     age: 19,
-//     greet(){
-//         console.log("Hello " + this.name);
-//     }
-// };
+const person = {
+    name: 'max',
+    age: 19,
+    greet(){
+        console.log("Hello " + this.name);
+    }
+};
+
+const personData = ({ name }) => {
+    console.log(name)
+}
+personData(person)
+
+const {name, age} = person;
+console.log(name, age)
 
 // person.greet()
 
 // Arrays and Array methods
 const array =['cooking', 'sports']
+const [hooby1, hobby2] = array;
+console.log(hooby1, hobby2)
 // for(let hobby of array){
 //     console.log(hobby)
 // }
@@ -47,12 +57,12 @@ const array =['cooking', 'sports']
 
 // Spread and Rest operators
 // Spread operator
-const newarray = [...array]
-console.log(newarray)
+// const newarray = [...array]
+// console.log(newarray)
 
-// Rest operator
+// // Rest operator
 
-const toArray = (...args) => {
-    return args;
-}
-console.log(toArray(1,2,3,4))
+// const toArray = (...args) => {
+//     return args;
+// }
+// console.log(toArray(1,2,3,4))
