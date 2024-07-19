@@ -33,7 +33,8 @@
 
 // person.greet()
 
-let array =['cooking', 'sports']
+// Arrays and Array methods
+const array =['cooking', 'sports']
 // for(let hobby of array){
 //     console.log(hobby)
 // }
