@@ -21,14 +21,21 @@
 // console.log(addrandom())
 // console.log(sumerizeUser(userNamed, age, hasHobbies))
 
-// Arrow/function within objects
+// // Arrow/function within objects
 
-const person = {
-    name: 'max',
-    age: 19,
-    greet(){
-        console.log("Hello " + this.name);
-    }
-};
+// const person = {
+//     name: 'max',
+//     age: 19,
+//     greet(){
+//         console.log("Hello " + this.name);
+//     }
+// };
 
-person.greet()
+// person.greet()
+
+let array =['cooking', 'sports']
+// for(let hobby of array){
+//     console.log(hobby)
+// }
+console.log(array.map( hobby =>'Hobby: ' + hobby))
+console.log(array)
