@@ -23,28 +23,28 @@
 
 // // Arrow/function within objects
 
-const person = {
-    name: 'max',
-    age: 19,
-    greet(){
-        console.log("Hello " + this.name);
-    }
-};
+// const person = {
+//     name: 'max',
+//     age: 19,
+//     greet(){
+//         console.log("Hello " + this.name);
+//     }
+// };
 
-const personData = ({ name }) => {
-    console.log(name)
-}
-personData(person)
+// const personData = ({ name }) => {
+//     console.log(name)
+// }
+// personData(person)
 
-const {name, age} = person;
-console.log(name, age)
+// const {name, age} = person;
+// console.log(name, age)
 
 // person.greet()
 
 // Arrays and Array methods
-const array =['cooking', 'sports']
-const [hooby1, hobby2] = array;
-console.log(hooby1, hobby2)
+// const array =['cooking', 'sports']
+// const [hooby1, hobby2] = array;
+// console.log(hooby1, hobby2)
 // for(let hobby of array){
 //     console.log(hobby)
 // }
@@ -66,3 +66,31 @@ console.log(hooby1, hobby2)
 //     return args;
 // }
 // console.log(toArray(1,2,3,4))
+
+
+// Async code and promises
+
+const fetchData = ()=>{
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            resolve('done');
+        },1500);
+    });
+    return promise;
+};
+setTimeout(()=>{
+    console.log('Done');
+    fetchData()
+    .then(text =>{
+        console.log(text);
+        return fetchData();
+
+    })
+    .then(text2 => {
+        console.log(text2);
+        return fetchData();
+    });
+}, 2000);
+
+console.log('Hello!')
+console.log('Hi!')
