@@ -42,5 +42,17 @@ const array =['cooking', 'sports']
 // console.log(array)
 
 // Array, objects & Reference types
-array.push('programming')
-console.log(array)
+// array.push('programming')
+// console.log(array)
+
+// Spread and Rest operators
+// Spread operator
+const newarray = [...array]
+console.log(newarray)
+
+// Rest operator
+
+const toArray = (...args) => {
+    return args;
+}
+console.log(toArray(1,2,3,4))
