@@ -1,6 +1,6 @@
-var userNamed = 'Ahmed';
-var age = 22;
-var hasHobbies = true;
+let userNamed = 'Ahmed';
+let age = 22;
+let hasHobbies = true;
 function sumerizeUser(userName, userAge, userHobby) {
     return (
         "Name is " + userName + ", Age is " + userAge + ", Has hobbies " + userHobby
