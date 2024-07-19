@@ -38,5 +38,9 @@ const array =['cooking', 'sports']
 // for(let hobby of array){
 //     console.log(hobby)
 // }
-console.log(array.map( hobby =>'Hobby: ' + hobby))
+// console.log(array.map( hobby =>'Hobby: ' + hobby))
+// console.log(array)
+
+// Array, objects & Reference types
+array.push('programming')
 console.log(array)
