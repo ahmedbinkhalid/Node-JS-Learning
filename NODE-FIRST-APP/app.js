@@ -11,6 +11,7 @@ app.use((req, res, next)=>{
 
 app.use((req, res, next)=>{
     console.log("Middleware 2");
+    res.send('<h1>Hello From Express.js!</h1>');
 });
 
 const server = http.createServer(app);
