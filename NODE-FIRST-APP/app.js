@@ -4,12 +4,12 @@ const express = require("express");
 
 const app = express();
 
-app.use((req, res, next)=>{
-    console.log("middleware 1");
-    next();
+app.use('/add-product', (req, res, next)=>{
+    console.log("Middleware 2");
+    res.send('<h1>This is "add product" page</h1>');
 });
 
-app.use((req, res, next)=>{
+app.use('/', (req, res, next)=>{
     console.log("Middleware 2");
     res.send('<h1>Hello From Express.js!</h1>');
 });
