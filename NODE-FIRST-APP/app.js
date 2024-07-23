@@ -10,13 +10,15 @@ const adminRouter = require('./Routes/admin');
 
 const shopRouter = require('./Routes/shop');
 
+const path = require('path');
+
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/admin',adminRouter);
 app.use(shopRouter);
 
 app.use((req, res, next)=>{
-    res.status(404).send("<h1>Page not Found Error 404</h1>");
+    res.status(404).sendFile(path.join(__dirname, 'views', 'noPage.html'));
 });
 
 app.listen(3000);
