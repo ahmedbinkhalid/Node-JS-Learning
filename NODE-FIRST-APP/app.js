@@ -9,7 +9,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-const adminData = require('./Routes/admin');
+const adminRouter = require('./Routes/admin');
 
 const shopRouter = require('./Routes/shop');
 
@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(express.static(path.join(__dirname,'public')));
 
-app.use('/admin',adminData.routes);
+app.use('/admin',adminRouter);
 app.use(shopRouter);
 
 app.use((req, res, next)=>{
