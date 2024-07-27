@@ -3,15 +3,10 @@ const express = require("express");
 
 const bodyParser = require('body-parser');
 
-const expHbs = require('express-handlebars');
-
 const app = express();
 
 
-
-app.engine('hbs', expHbs.engine({extname: '.hbs', defaultLayout: null}));
-
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 const adminData = require('./Routes/admin');
