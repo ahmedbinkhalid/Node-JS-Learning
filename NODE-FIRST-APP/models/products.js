@@ -18,7 +18,7 @@ module.exports = class Product {
         this.title = title;
         this.imageUrl = imageUrl;
         this.price = price;
-        this.discription = description;
+        this.description = description;
     }
     save(){
         getProductsfromFile(products => {
