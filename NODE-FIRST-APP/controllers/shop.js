@@ -14,13 +14,9 @@ exports.getIndex = (req, res, next) =>{
 }
 exports.getProduct = (req, res, next) => {
     const prodId = req.params.productId;
-    
-    if (!prodId) {
-        console.log("No product ID found in request");
-        return res.status(400).send('Product ID is missing');
-    }
-
-    console.log("Product ID:", prodId); // Should print product ID
+    Product.FindById(prodId, product =>{
+        console.log(product);
+    })
     res.redirect('/');
 };
 exports.getcart = (req, res, next) =>{
