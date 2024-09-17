@@ -12,7 +12,17 @@ exports.getIndex = (req, res, next) =>{
         res.render('shop/index', {prods: products, pageTitle: 'Index', path: '/'});
     });
 }
+exports.getProduct = (req, res, next) => {
+    const prodId = req.params.productId;
+    
+    if (!prodId) {
+        console.log("No product ID found in request");
+        return res.status(400).send('Product ID is missing');
+    }
 
+    console.log("Product ID:", prodId); // Should print product ID
+    res.redirect('/');
+};
 exports.getcart = (req, res, next) =>{
     res.render(
         'shop/cart',
